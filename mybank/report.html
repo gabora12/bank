@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style/css/style.css">
+    <title> تقرير بيانات عميل</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>مصرفي</span>
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="/">الرئيسية</a></li>
+                <li><a href="./deposit.html">ايداع</a>
+                <li><a href="./withdrawal.html">سحب</a></li>
+                <li> <p>طلب خدمة</p>
+                    <div class="dropdown">
+                        <a href="./electricServices.html">شراء كهرباء </a>
+                        <hr>
+                        <a href="./mobileService.html">شراء رصيد </a>
+                        <hr>
+                        <a href="./eduServices.html">دفع رسوم  دراسة</a>
+
+                    </div>
+                    <li><a href="./addcustomer.html">اضافة عميل</a></li>
+                <li><a href="./customer.html">بيانات العملاء</a></li>
+                <li><a href="./report.html">تقرير</a></li>
+            </ul>
+    </div>
+
+    <div class="auth">
+        <div id="userLogged">
+         <span id="userNameLoged"></span>
+         &nbsp;
+         <span id='signOut' href="">خروج</span>
+        </div>
+
+        <div id="userUnlogged">
+         <span>دخول</span>
+       </div> 
+    </div>
+
+
+    </header>
+    
+    <section >
+            <div class="container">
+                <form class="search" action="">
+                    <input class="findId" type="number" placeholder="أدخل رقم الحساب">
+                    <input class="confirmId" type="submit" value="تأكيد">
+                </form>
+                <button class="print">طباعة</button>
+                <div class="customerPage">
+
+                        <div class="noProccess"></div>
+                        <div class="headerTable" style="background-color: rgba(158, 153, 153, 0.392);">
+                          <!-- <span class="table" > رقم الحساب</span> -->
+                          <!-- <span class="table" >الاسم</span> -->
+                          <span class="table" > نوع العملية </span>
+                          <span class="table" >القيمة</span>
+                          <span style="font-size:large;" class="table" >  الرصيد  </span>
+                          <span style="font-size:small;" class="table" >الرصيد بعد العملية</span>
+                          <span style="text-align: center;" class="table" > الزمن</span>
+                        </div>
+                        <div class="report customer">
+                          
+                        </div>
+
+                </div>
+            </div>
+    </section>
+
+
+<script src="../js/userDB.js"></script>
+<script src="../js/report.js"></script>
+<script src="../js/user.js"></script>
+</body>
+</html>

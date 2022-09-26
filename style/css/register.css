@@ -1,0 +1,66 @@
+@import url(../font/stylesheet.css);
+
+
+body{
+    direction: rtl;
+    font-family: 'Cairo' , sans-serif;
+}
+
+.login-form , .register-form{
+    margin: 70px 0 ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 50%;
+    /* background-color: magenta; */
+}
+
+form input#loginUsername ,
+form input#loginPassword,
+form input#registerEmail,
+form input#registerUsername,
+form input#registerPassword {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+    height: 40px;
+    border: none;
+    border-bottom: solid 1px #333333;
+    padding: 0 8px;
+    font-size: 18px;
+    font-family: 'Cairo' , sans-serif;
+
+}
+
+form input.btn-form{
+    display: block;
+    width: 50%;
+    margin-bottom: 50px;
+    height: 40px;
+    text-align: center;
+    margin: 0 25%;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #eee;
+    /* left: 50%;
+    transform: translate(-50%); */
+    opacity: .6;
+   
+    
+}
+
+form input.btn-form:hover
+{
+    transform: scale(1.1);
+    opacity: 1;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.login-form span{
+  text-transform: capitalize;
+  
+}
+
