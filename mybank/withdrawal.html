@@ -1,104 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../style/css/style.css">
+    <link rel="stylesheet" href="../style/css/style.css" />
     <title>سحب نقدي</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <span>مصرفي</span>
-        </div>
+      <div class="logo">
+        <span>مصرفي</span>
+      </div>
 
-        <div class="navbar">
-            <ul>
-                <li><a href="/">الرئيسية</a></li>
-                <li><a href="./deposit.html">ايداع</a>
-                <li><a href="./withdrawal.html">سحب</a></li>
-                <li> <p>طلب خدمة</p>
-                    <div class="dropdown">
-                        <a href="./electricServices.html">شراء كهرباء </a>
-                        <hr>
-                        <a href="./mobileService.html">شراء رصيد </a>
-                        <hr>
-                        <a href="./eduServices.html">دفع رسوم  دراسة</a>
+      <div class="navbar">
+        <ul>
+          <li><a href="/">الرئيسية</a></li>
+          <li><a href="./deposit.html">ايداع</a></li>
+          <li><a href="./withdrawal.html">سحب</a></li>
+          <li>
+            <p>طلب خدمة</p>
+            <div class="dropdown">
+              <a href="./electricServices.html">شراء كهرباء </a>
+              <hr />
+              <a href="./mobileService.html">شراء رصيد </a>
+              <hr />
+              <a href="./eduServices.html">دفع رسوم دراسة</a>
+            </div>
+          </li>
 
-                    </div>
-                    <li><a href="./addcustomer.html">اضافة عميل</a></li>
-                <li><a href="./customer.html">بيانات العملاء</a></li>
-                <li><a href="./report.html">تقرير</a></li>
-            </ul>
-    </div>
+          <li><a href="./addcustomer.html">اضافة عميل</a></li>
+          <li><a href="./customer.html">بيانات العملاء</a></li>
+          <li><a href="./report.html">تقرير</a></li>
+        </ul>
+      </div>
 
-    <div class="auth">
+      <div class="auth">
         <div id="userLogged">
-         <span id="userNameLoged"></span>
-         &nbsp;
-         <span id='signOut' href="">خروج</span>
+          <span id="userNameLoged"></span>
+          &nbsp;
+          <span id="signOut" href="">خروج</span>
         </div>
 
         <div id="userUnlogged">
-         <span>دخول</span>
-       </div> 
-    </div>
-
-
+          <span>دخول</span>
+        </div>
+      </div>
     </header>
-    
-    <section class="transiction" >
-           <div class="continer">
-             <div class="increase">
-                <h1 style="color: #B00020;" >سحب مبلغ نقدي</h1>
-                
-                <form action="">
-                    <span class="alert"></span>
-                    <div class="form-control">
-                     <!-- <label for="idAccount">رقم الحساب</label> -->
-                     <select class="idAccount" type="number">
-                        <option  hidden value="0">رقم الحساب</option>
-                        <option  value="0">رقم الحساب</option>
 
-                    </select>
-                    </div>
-                    
-                    <div class="form-control">
-                        <label for="uname">اسم العميل</label>
-                        <input readonly type="text" name="" class="uname">
-                    </div>
-                    
-                    <div class="form-control">
-                     <label for="balance"> الرصيد الحالي</label>
-                     <input readonly type="number" name="" class="balance">
-                    </div>
-                 
-                 <div class="mount-update" >
-                    <div>
-                        <label for="mount">المبلغ المراد سحبه</label>
-                        <input type="number" name="" class="mount">
-                    </div>
-                    <div>
-                        <label for="nowBalance">الرصيد بعد السحب</label>
-                        <input readonly  type="number" class="nowBalance">
-                    </div>
-                </div>
-                <input style="background-color: #B00020; font-family: cairo; height: 40px;" type="submit" class="confirmIncrease" value="تأكيد">
-                <h3  class="credit" ></h3>
-                </form>
-             </div>
+    <section class="transiction">
+      <div class="continer">
+        <div class="increase">
+          <h1 style="color: #b00020">سحب مبلغ نقدي</h1>
 
-             <hr style="border:solid 2px #856262">
-          
+          <form action="">
+            <span class="alert"></span>
+            <div class="form-control">
+              <!-- <label for="idAccount">رقم الحساب</label> -->
+              <select class="idAccount" type="number">
+                <option hidden value="0">رقم الحساب</option>
+                <option value="0">رقم الحساب</option>
+              </select>
             </div>
+
+            <div class="form-control">
+              <label for="uname">اسم العميل</label>
+              <input readonly type="text" name="" class="uname" />
+            </div>
+
+            <div class="form-control">
+              <label for="balance"> الرصيد الحالي</label>
+              <input readonly type="number" name="" class="balance" />
+            </div>
+
+            <div class="mount-update">
+              <div>
+                <label for="mount">المبلغ المراد سحبه</label>
+                <input type="number" name="" class="mount" />
+              </div>
+              <div>
+                <label for="nowBalance">الرصيد بعد السحب</label>
+                <input readonly type="number" class="nowBalance" />
+              </div>
+            </div>
+            <input
+              style="
+                background-color: #b00020;
+                font-family: cairo;
+                height: 40px;
+              "
+              type="submit"
+              class="confirmIncrease"
+              value="تأكيد"
+            />
+            <h3 class="credit"></h3>
+          </form>
+        </div>
+
+        <hr style="border: solid 2px #856262" />
+      </div>
     </section>
 
-
     <script src="../js/userDB.js"></script>
-   
+
     <script src="../js/withdrawal.js"></script>
     <script src="../js/user.js"></script>
-</body>
+  </body>
 </html>

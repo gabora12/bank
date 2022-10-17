@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="../style/css/style.css" />
-    <title>تقرير بيانات عميل</title>
+    <title>مسئول</title>
   </head>
   <body>
     <header>
@@ -51,34 +51,36 @@
 
     <section>
       <div class="container">
-        <form class="search" action="">
-          <input class="findId" type="number" placeholder="أدخل رقم الحساب" />
-          <input class="confirmId" type="submit" value="تأكيد" />
-        </form>
-        <button class="print">طباعة</button>
-        <div class="customerPage">
-          <div class="noProccess"></div>
-          <div
-            class="headerTable"
-            style="background-color: rgba(158, 153, 153, 0.392)"
-          >
-            <!-- <span class="table" > رقم الحساب</span> -->
-            <!-- <span class="table" >الاسم</span> -->
-            <span class="table"> نوع العملية </span>
-            <span class="table">القيمة</span>
-            <span style="font-size: large" class="table"> الرصيد </span>
-            <span style="font-size: small" class="table"
-              >الرصيد بعد العملية</span
-            >
-            <span style="text-align: center" class="table"> الزمن</span>
+        <button
+          style="
+            background-color: green;
+            width: 120px;
+            height: 35px;
+            border: 0;
+            color: azure;
+            font-weight: bold;
+            border-radius: 10px;
+          "
+          onclick="location.href = 'addEmploye.html'"
+        >
+          اضافة
+        </button>
+        <div class="employeePage">
+          <div class="headerTable">
+            <span class="table">الاسم</span>
+            <span class="table">الرقم الوطني</span>
+            <span class="table">السكن</span>
+            <span class="table">رقم الجوال</span>
+            <span class="table">اسم المستخدم</span>
+            <span class="table">كلمة السر</span>
+            <span class="table">حذف</span>
           </div>
-          <div class="report customer"></div>
+          <div class="employee"></div>
         </div>
       </div>
     </section>
 
-    <script src="../js/userDB.js"></script>
-    <script src="../js/report.js"></script>
     <script src="../js/user.js"></script>
+    <script src="../js/employe.js"></script>
   </body>
 </html>

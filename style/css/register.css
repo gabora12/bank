@@ -1,66 +1,65 @@
 @import url(../font/stylesheet.css);
 
-
-body{
-    direction: rtl;
-    font-family: 'Cairo' , sans-serif;
+body {
+  direction: rtl;
 }
+.login-form {
+  margin: 100px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
 
-.login-form , .register-form{
-    margin: 70px 0 ;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    width: 50%;
-    /* background-color: magenta; */
+  /* background-color: magenta; */
 }
-
-form input#loginUsername ,
-form input#loginPassword,
-form input#registerEmail,
-form input#registerUsername,
-form input#registerPassword {
-    display: block;
-    width: 100%;
-    margin-bottom: 50px;
-    height: 40px;
-    border: none;
-    border-bottom: solid 1px #333333;
-    padding: 0 8px;
-    font-size: 18px;
-    font-family: 'Cairo' , sans-serif;
-
+.login-form input,
+.register-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+  height: 40px;
+  border: none;
+  border-bottom: solid 1px #333333;
+  padding: 0 8px;
+  font-size: 18px;
+  font-family: "Cairo", sans-serif;
+  background-color: #c3c3c3;
 }
-
-form input.btn-form{
-    display: block;
-    width: 50%;
-    margin-bottom: 50px;
-    height: 40px;
-    text-align: center;
-    margin: 0 25%;
-    border: none;
-    border-radius: 5px;
-    background-color: #333333;
-    color: #eee;
-    /* left: 50%;
+.login-form input {
+  background-color: #fff;
+}
+.login-form input:focus,
+.register-form input:focus {
+  outline: 1px solid #009688;
+  border-radius: 10px;
+}
+.login-form #loginBtn,
+.register-form #registerBtn {
+  display: block;
+  width: 50%;
+  margin-bottom: 50px;
+  height: 40px;
+  text-align: center;
+  margin: 0 25%;
+  border: none;
+  border-radius: 5px;
+  background-color: #333333;
+  color: #eee;
+  /* left: 50%;
     transform: translate(-50%); */
-    opacity: .6;
-   
-    
+  opacity: 0.6;
+  margin-bottom: 50px;
 }
 
-form input.btn-form:hover
-{
-    transform: scale(1.1);
-    opacity: 1;
-    transition: .5s;
-    cursor: pointer;
+.login-form .btn-form:hover,
+.register-form .btn-form:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-.login-form span{
+.login-form span {
   text-transform: capitalize;
-  
 }
-
